@@ -106,3 +106,10 @@ class UserView(generics.ListAPIView, generics.RetrieveAPIView, generics.CreateAP
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+# Retrieve, update or delete a employee instance
+class UserRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = AppUser.objects.all()
+    serializer_class = UserSerializerForPost
+

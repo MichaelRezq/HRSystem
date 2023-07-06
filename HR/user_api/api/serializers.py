@@ -31,7 +31,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserModel
-        fields = ('email', 'username', 'role')
+        fields = ('email', 'username', 'role','user_id')
 	
 
 class UserSerializerForPost(serializers.ModelSerializer):
