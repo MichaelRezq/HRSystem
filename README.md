@@ -15,11 +15,11 @@ To get started with the HR System, follow these steps:
 
 1. Clone the repository:
 
-git clone <repository-url>
+git clone <repository-ugit@github.com:MichaelRezq/HRSystem.git>
 
 
 2. Install the dependencies for the frontend:
-
+ git clone <git@github.com:MichaelRezq/Hr-frontend.git>
 cd frontend
 npm install
 
